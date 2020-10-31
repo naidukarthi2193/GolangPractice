@@ -24,6 +24,15 @@ func add(n1 int, n2 int) (string, error) {
 	return final, nil
 }
 
+func subtract() func() int {
+	var x int
+	return func() int {
+		x++
+		return x + 1
+	}
+
+}
+
 func main() {
 	fmt.Println("Hello ")
 	var employee Employee
