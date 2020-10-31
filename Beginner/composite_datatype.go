@@ -2,17 +2,18 @@ package main
 
 import "fmt"
 
-type Person struct {
-	name string
-	age  int
-}
-
-type Employee struct {
-	id     int
-	person Person
-}
-
 func main() {
+
+	type Person struct {
+		name string
+		age  int
+	}
+
+	type Employee struct {
+		id     int
+		person Person
+	}
+
 	var arraydata []string
 	arraydata = []string{"k", "a", "r", "t"}
 	newdata := [...]string{"k", "a", "r", "t"}
