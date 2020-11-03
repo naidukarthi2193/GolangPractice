@@ -8,7 +8,7 @@ import (
 func backgroundTimer(sent string) {
 
 	ticker := time.NewTicker(2 * time.Second)
-	for _ = range ticker.C {
+	for range ticker.C {
 		fmt.Println(sent)
 	}
 }
