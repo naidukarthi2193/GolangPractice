@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+//Employee ...
 type Employee struct {
 	name string
 	age  int
