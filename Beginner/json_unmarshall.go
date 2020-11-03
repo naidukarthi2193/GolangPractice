@@ -34,10 +34,12 @@ func main() {
 	}
 	defer file.Close()
 
-	byteval, err := ioutil.ReadAll(file)
+	bytearray, err := ioutil.ReadAll(file)
 
 	var users Users
-	json.Unmarshal(byteval, &users)
+	json.Unmarshal(bytearray, &users)
+	for i := 0; i < len(users.Users); i++ {
+		fmt.Println(users.Users[i])
+	}
 
-	fmt.Println(users)
 }
